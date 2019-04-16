@@ -18,5 +18,5 @@ interface ChatListener {
     fun observeTicker(): Flowable<Ticker>*/
 
     @Send
-    fun opponentsGet(): Flowable<Opponents>
+    fun opponentsGet(command : GetOpponentsCommand)
 }
